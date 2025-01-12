@@ -11,8 +11,8 @@ class Number_guessing_game{
         {
             int guess = 0;
             int attempts = 0;
-            int target_num = rm.nextInt(200);
-            System.out.println("Guess the number between 1 and 200!");
+            int target_num = rm.nextInt(100);
+            System.out.println("Guess the number between 1 and 100!");
 
             while (guess != target_num)
             {
@@ -28,8 +28,8 @@ class Number_guessing_game{
                     else if (guess > target_num)
                         System.out.println("Too High! Try Again!");
                     else
-                        System.out.println("Congratulations! You guessed it right!");
-                }
+                        System.out.println("Congratulations!\nYou guessed it right in "+ attempts + " attempts.");
+                } 
                 catch (NumberFormatException n)
                 {
                     System.out.println("Invalid input! Please Enter a number.");
