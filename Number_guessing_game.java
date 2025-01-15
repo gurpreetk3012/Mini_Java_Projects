@@ -35,9 +35,9 @@ class Number_guessing_game{
                     System.out.println("Invalid input! Please Enter a number.");
                 }
             }
+            System.out.println("Do you want to play again? (YES/NO): ");
+            playagain = sc.nextLine().equalsIgnoreCase("YES");
         }
-        System.out.println("Do you want to play again? (YES/NO): ");
-        playagain = sc.nextLine().equalsIgnoreCase("YES");
 
         System.out.println("Thank you for playing!");
         sc.close();
